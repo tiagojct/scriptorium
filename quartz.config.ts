@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "pt-PT",
-    baseUrl: "tiagojct.github.io/jardim-digital",
+    baseUrl: "tiagojct.github.io/scriptorium",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
