@@ -1,5 +1,5 @@
 ---
-title: "Indice Tematico"
+title: "Índice Temático"
 date: 2026-05-23
 tags:
   - meta
@@ -8,34 +8,34 @@ aliases:
   - temas
 ---
 
-# Indice Tematico
+# Índice Temático
 
-Notas agrupadas por area. Cada seccao funciona como um ponto de partida para explorar um tema.
+Notas agrupadas por área. Cada secção funciona como um ponto de partida para explorar um tema.
 
-## Saude Digital
+## Saúde Digital
 
-- *Em construcao...*
+- *Em construção...*
 
-## Inteligencia Artificial
+## Inteligência Artificial
 
-- *Em construcao...*
+- *Em construção...*
 
 ## Tecnologia
 
-- *Em construcao...*
+- *Em construção...*
 
 ## Academia e Ensino
 
-- *Em construcao...*
+- *Em construção...*
 
 ## Leituras
 
-- *Em construcao...*
+- *Em construção...*
 
 ## Filosofia
 
-- *Em construcao...*
+- *Em construção...*
 
 ## Ferramentas
 
-- *Em construcao...*
+- *Em construção...*

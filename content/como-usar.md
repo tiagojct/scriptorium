@@ -13,26 +13,26 @@ Guia pessoal para publicar e manter o scriptorium.
 
 ## Publicar notas
 
-O site e gerado a partir do vault Obsidian em `~/github/scriptorium/content/`.
+O site é gerado a partir do vault Obsidian em `~/github/scriptorium/content/`.
 
 ```
 # Escrever ou editar notas em content/
 cd ~/github/scriptorium
 
-# Pre-visualizar localmente
+# Pré-visualizar localmente
 npx quartz build --serve
 
 # Publicar
 git add content/
-git commit -m "Nova nota: titulo"
+git commit -m "Nova nota: título"
 git push
 ```
 
 O deploy dispara automaticamente via GitHub Actions e fica online em menos de um minuto.
 
-## Nao publicar
+## Não publicar
 
-Para manter uma nota privada (so no Obsidian, nao no site):
+Para manter uma nota privada (só no Obsidian, não no site):
 
 - Adicionar `draft: true` no frontmatter da nota
 - Ou mover para uma pasta fora de `content/` (ex: `private/`)
@@ -45,13 +45,13 @@ O filtro `RemoveDrafts` no Quartz ignora notas com `draft: true`.
 ~/github/scriptorium/
   content/           <- Notas publicadas (vault Obsidian)
   quartz/            <- Motor do site (Quartz v4)
-  quartz.config.ts   <- Configuracao (titulo, tema, plugins)
+  quartz.config.ts   <- Configuração (título, tema, plugins)
   public/            <- Output do build (gitignored)
 ```
 
 ## Actualizar o Quartz
 
-O Quartz e copiado directamente para o repo (nao e fork). Para actualizar:
+O Quartz é copiado directamente para o repo (não é fork). Para actualizar:
 
 ```
 git clone --depth 1 https://github.com/jackyzha0/quartz.git /tmp/quartz-update
@@ -63,7 +63,7 @@ npx quartz build
 
 ## Notas
 
-- A traducao pt-PT esta em `quartz/i18n/locales/pt-PT.ts`
-- O workflow de deploy esta em `.github/workflows/deploy.yaml`
-- Se o GitHub Pages falhar apos rename do repo, reactivar com:
+- A tradução pt-PT está em `quartz/i18n/locales/pt-PT.ts`
+- O workflow de deploy está em `.github/workflows/deploy.yaml`
+- Se o GitHub Pages falhar após rename do repo, reactivar com:
   `gh api /repos/tiagojct/scriptorium/pages -X POST -f "build_type=workflow"`
