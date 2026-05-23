@@ -4,7 +4,6 @@ date: 2026-05-23
 tags:
   - meta
 aliases:
-  - indice-tematico
   - temas
 ---
 
