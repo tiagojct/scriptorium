@@ -1,0 +1,20 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/
+.obsidian/themes/
+.obsidian/hotkeys.json
+.obsidian/core-plugins.json
+.obsidian/community-plugins.json
+
+# Quartz
+public/
+node_modules/
+.quartz-cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
