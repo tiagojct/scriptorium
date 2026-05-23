@@ -1,5 +1,5 @@
 ---
-title: "🪴 Nota-modelo"
+title: "Nota-modelo"
 date: 2026-05-23
 tags:
   - exemplo
@@ -8,33 +8,33 @@ aliases:
   - modelo
 ---
 
-# 🪴 Nota-modelo
+# Nota-modelo
 
-Este é um exemplo de nota *budding* para referência. Usa esta estrutura como ponto de partida para novas notas.
+Exemplo de nota budding para referencia. Usa esta estrutura como ponto de partida para novas notas.
 
 ## Contexto
 
-Aqui explica-se o *porquê* da nota: o que motivou a sua criação, qual o problema ou questão que aborda.
+Explica-se o porque da nota: o que motivou a sua criacao, qual o problema ou questao que aborda.
 
 ## Desenvolvimento
 
-O corpo da nota, organizado em secções curtas. Cada parágrafo desenvolve uma ideia. As [[como-cultivar|ligações internas]] ligam conceitos entre si.
+O corpo da nota, organizado em seccoes curtas. Cada paragrafo desenvolve uma ideia. As [[como-cultivar|ligacoes internas]] ligam conceitos entre si.
 
-### Subsecção
+### Subseccao
 
-As subsecções ajudam a organizar quando a nota cresce.
+As subseccoes ajudam a organizar quando a nota cresce.
 
-## Referências
+## Referencias
 
 - *Fonte relevante 1* — uma frase sobre o contributo
-- *Fonte relevante 2* — outra referência importante
+- *Fonte relevante 2* — outra referencia importante
 
-## Ligações
+## Ligacoes
 
-- [[index|Jardim Digital]] — a página inicial
-- [[_índice|Índice Temático]] — agrupamento por temas
+- [[index|Jardim Digital]] — a pagina inicial
+- [[indice-tematico|Indice Tematico]] — agrupamento por temas
 - [[como-cultivar|Como cultivar]] — as regras do jardim
 
 ---
 
-*Estado: 🪴 budding · Última rega: 2026-05-23*
+*Estado: budding · Atualizado: 2026-05-23*

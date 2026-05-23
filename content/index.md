@@ -1,56 +1,40 @@
 ---
-title: "🌱 Jardim Digital"
+title: "Jardim Digital"
 date: 2026-05-23
 tags:
   - meta
-  - jardim-digital
 aliases:
   - home
-  - índice
+  - indice
   - digital-garden
 ---
 
-# 🌱 Jardim Digital
+# Jardim Digital
 
-Bem-vindo ao meu jardim digital — um espaço onde cultivo ideias, notas e conhecimento em constante evolução.  
-Ao contrário de um blog cronológico, este jardim é **não-linear**: as notas crescem, ramificam-se e interligam-se como plantas.
+Notas publicas sobre saude digital, inteligencia artificial, academia e outros interesses. Este espaco e nao-linear: as notas ligam-se entre si em vez de seguirem uma ordem cronologica.
 
-## 🧭 Como navegar
+## Navegacao
 
-- As **ligações entre notas** formam a espinha dorsal do jardim — segue os links e vê onde te levam
-- Notas com [[_índice|índices temáticos]] agrupam conteúdos por área
-- O *gráfico de conhecimento* (disponível na [versão Obsidian](https://obsidian.md)) mostra visualmente as conexões
-- Usa a pesquisa (`Cmd+K` ou `/`) para encontrar notas por palavra-chave
+Usa os links entre notas para explorar. A pesquisa (`Cmd+K` ou `/`) encontra notas por palavra-chave. O [[indice-tematico|indice tematico]] agrupa os conteudos por area.
 
-## 🌿 O que vais encontrar
+## Areas
 
-Este jardim está organizado em grandes áreas temáticas:
+- **Saude Digital** — Tecnologia, informatica medica e transformacao digital na saude
+- **Inteligencia Artificial** — IA aplicada a saude, machine learning, etica
+- **Academia e Ensino** — Reflexoes sobre ensino superior, metodologias e investigacao
+- **Leituras** — Fichamentos, notas e citacoes
+- **Ferramentas** — Metodos de trabalho, automacoes e workflows
 
-- **💻 Saúde Digital** — Tecnologia, informática médica e transformação digital na saúde
-- **🧠 Inteligência Artificial** — IA aplicada à saúde, *machine learning*, ética e implicações clínicas
-- **🎓 Academia & Ensino** — Reflexões sobre o ensino superior, metodologias e investigação
-- **📚 Leitura & Notas** — Fichamentos, destaques e pensamentos a partir do que leio
-- **🔧 Ferramentas & Workflows** — Como trabalho: ferramentas, métodos e automações
+## Sobre o formato
 
-## 🪴 Filosofia do jardim
+Inspirado pelo movimento *[Digital Garden](https://maggieappleton.com/garden-history)* e *[Learning in Public](https://www.swyx.io/learn-in-public)*. As notas sao publicadas ainda imperfeitas e revistas ao longo do tempo.
 
-> Um jardim digital é um espaço de pensamento intermédio — não as sementes das ideias, nem o fruto maduro, mas o território fértil entre ambos.
-
-Inspirado pelo movimento *[Digital Garden](https://maggieappleton.com/garden-history)* e *[Learning in Public](https://www.swyx.io/learn-in-public)*, este jardim é:
-
-- **Imperfeito por natureza** — as notas não precisam de estar "prontas" para serem publicadas
-- **Vivo e mutável** — as notas são revistas, expandidas e podadas regularmente
-- **Interligado** — o valor está nas conexões, não em textos isolados
-- **Público** — cultivar o pensamento à vista de todos melhora a sua qualidade
-
-## 📬 Contacto
-
-Se algo neste jardim te despertar curiosidade, discordância ou vontade de colaborar:
+## Contacto
 
 - **Email:** [tiagojct@med.up.pt](mailto:tiagojct@med.up.pt)
-- **Website académico:** [tiagojct.eu](https://tiagojct.eu)
+- **Site academico:** [tiagojct.eu](https://tiagojct.eu)
 - **GitHub:** [@tiagojct](https://github.com/tiagojct)
 
 ---
 
-*Última rega: 2026-05-23*
+*Atualizado: 2026-05-23*
