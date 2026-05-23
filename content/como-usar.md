@@ -39,6 +39,20 @@ Para manter uma nota privada (só no Obsidian, não no site):
 
 O filtro `RemoveDrafts` no Quartz ignora notas com `draft: true`.
 
+## Imagens
+
+As imagens colocadas no Obsidian vao para `content/assets/` automaticamente (definido em `.obsidian/app.json`). O Quartz serve-as sem configuracao adicional.
+
+```
+# Referencia markdown
+![legenda](assets/foto.png)
+
+# Wikilink do Obsidian (tambem funciona)
+![[assets/foto.png]]
+```
+
+O plugin `Assets` do Quartz copia as imagens para `public/` durante o build e os links sao resolvidos automaticamente.
+
 ## Estrutura do projecto
 
 ```
