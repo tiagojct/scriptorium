@@ -21,9 +21,11 @@ Usa os links entre notas para explorar. A pesquisa (`Cmd+K` ou `/`) encontra not
 
 - **Saude Digital** — Tecnologia, informatica medica e transformacao digital na saude
 - **Inteligencia Artificial** — IA aplicada a saude, machine learning, etica
+- **Tecnologia** — Computacao, engenharia de software, web, ferramentas e automacao
 - **Academia e Ensino** — Reflexoes sobre ensino superior, metodologias e investigacao
 - **Leituras** — Fichamentos, notas e citacoes
-- **Ferramentas** — Metodos de trabalho, automacoes e workflows
+- **Filosofia** — Etica, epistemologia, filosofia da ciencia e da tecnologia
+- **Ferramentas** — Metodos de trabalho, workflows e produtividade
 
 ## Sobre o formato
 

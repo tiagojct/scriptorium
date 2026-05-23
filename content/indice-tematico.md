@@ -20,11 +20,19 @@ Notas agrupadas por area. Cada seccao funciona como um ponto de partida para exp
 
 - *Em construcao...*
 
+## Tecnologia
+
+- *Em construcao...*
+
 ## Academia e Ensino
 
 - *Em construcao...*
 
 ## Leituras
+
+- *Em construcao...*
+
+## Filosofia
 
 - *Em construcao...*
 
