@@ -19,7 +19,7 @@ Usa os links entre notas para explorar. A pesquisa (`Cmd+K` ou `/`) encontra not
 
 ## Sobre o formato
 
-Inspirado pelo movimento *[Digital Garden](https://maggieappleton.com/garden-history)* e *[Learning in Public](https://www.swyx.io/learn-in-public)*. As notas são publicadas ainda imperfeitas e revistas ao longo do tempo.
+Inspirado pelo movimento [Digital Garden](https://maggieappleton.com/garden-history) e [Learning in Public](https://www.swyx.io/learn-in-public). As notas são publicadas ainda imperfeitas e revistas ao longo do tempo.
 
 ## Contacto
 
