@@ -4,6 +4,7 @@ date: 2026-05-23
 tags:
   - meta
   - guia
+draft: true
 ---
 
 # Como cultivar este jardim

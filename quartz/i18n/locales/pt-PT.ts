@@ -2,86 +2,86 @@ import { Translation } from "./definition"
 
 export default {
   propertyDefaults: {
-    title: "Sem título",
-    description: "Sem descrição",
+    title: "Por batizar",
+    description: "Por cartografar",
   },
   components: {
     callout: {
-      note: "Nota",
+      note: "Anotação",
       abstract: "Resumo",
       info: "Informação",
       todo: "Por fazer",
-      tip: "Dica",
-      success: "Sucesso",
+      tip: "Sondagem",
+      success: "Boavista!",
       question: "Pergunta",
       warning: "Aviso",
       failure: "Falha",
-      danger: "Perigo",
+      danger: "Baleia Branca",
       bug: "Erro",
-      example: "Exemplo",
-      quote: "Citação",
+      example: "Amostra",
+      quote: "Borda",
     },
     backlinks: {
-      title: "Ligações reversas",
-      noBacklinksFound: "Nenhuma ligação reversa encontrada",
+      title: "Backlinks",
+      noBacklinksFound: "Nenhum backlink avistado",
     },
     themeToggle: {
-      lightMode: "Modo claro",
-      darkMode: "Modo escuro",
+      lightMode: "Acima da linha d'água",
+      darkMode: "Abaixo da linha d'água",
     },
     readerMode: {
-      title: "Modo de leitura",
+      title: "Modo de vigia",
     },
     explorer: {
-      title: "Explorador",
+      title: "Carta de navegação",
     },
     footer: {
-      createdWith: "Criado com",
+      createdWith: "Armado com",
     },
     graph: {
-      title: "Grafo",
+      title: "Cartografia",
     },
     recentNotes: {
-      title: "Notas recentes",
-      seeRemainingMore: ({ remaining }) => `Ver mais ${remaining} →`,
+      title: "Diário de bordo",
+      seeRemainingMore: ({ remaining }) => `Mais ${remaining} no horizonte →`,
     },
     transcludes: {
-      transcludeOf: ({ targetSlug }) => `Transclusão de ${targetSlug}`,
-      linkToOriginal: "Ligação para o original",
+      transcludeOf: ({ targetSlug }) => `Abordagem de ${targetSlug}`,
+      linkToOriginal: "Amarrar ao original",
     },
     search: {
-      title: "Pesquisar",
-      searchBarPlaceholder: "Pesquisar algo...",
+      title: "Sondar",
+      searchBarPlaceholder: "Deitar a sonda...",
     },
     tableOfContents: {
-      title: "Índice",
+      title: "Tábuas",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `Leitura de ${minutes} min`,
+      readingTime: ({ minutes }) => `${minutes} minutos de vigia`,
     },
   },
   pages: {
     rss: {
-      recentNotes: "Notas recentes",
-      lastFewNotes: ({ count }) => `Últimas ${count} notas`,
+      recentNotes: "Últimas entradas no diário de bordo",
+      lastFewNotes: ({ count }) => `Últimas ${count} entradas no diário de bordo`,
     },
     error: {
-      title: "Não encontrado",
-      notFound: "Esta página é privada ou não existe.",
-      home: "Voltar à página inicial",
+      title: "Terra à vista? Não.",
+      notFound: "Esta página é privada ou nunca existiu.",
+      home: "Regressar ao convés",
     },
     folderContent: {
-      folder: "Pasta",
+      folder: "Porão",
       itemsUnderFolder: ({ count }) =>
-        count === 1 ? "1 item nesta pasta." : `${count} itens nesta pasta.`,
+        count === 1 ? "1 volume no porão." : `${count} volumes no porão.`,
     },
     tagContent: {
-      tag: "Etiqueta",
-      tagIndex: "Índice de etiquetas",
+      tag: "Arpão",
+      tagIndex: "Arpoeira",
       itemsUnderTag: ({ count }) =>
-        count === 1 ? "1 item com esta etiqueta." : `${count} itens com esta etiqueta.`,
-      showingFirst: ({ count }) => `A mostrar as ${count} primeiras etiquetas.`,
-      totalTags: ({ count }) => `Encontradas ${count} etiquetas ao todo.`,
+        count === 1 ? "1 captura com este arpão." : `${count} capturas com este arpão.`,
+      showingFirst: ({ count }) => `A mostrar as ${count} primeiras capturas.`,
+      totalTags: ({ count }) => `Encontrados ${count} arpões ao todo.`,
     },
   },
 } as const satisfies Translation

@@ -53,6 +53,51 @@ As imagens colocadas no Obsidian vao para `content/assets/` automaticamente (def
 
 O plugin `Assets` do Quartz copia as imagens para `public/` durante o build e os links sao resolvidos automaticamente.
 
+## Adicionar fontes (livros, artigos, papers)
+
+Para registar uma fonte bibliográfica:
+
+1. Criar uma nova nota em `content/` com `type: fonte` no frontmatter
+2. Usar esta estrutura como ponto de partida:
+
+```
+---
+title: "Título da obra"
+date: 2026-05-23
+tags:
+  - leituras
+type: fonte
+draft: true
+---
+
+# Título
+
+> Citação-chave que captura a essência da obra.
+
+## Ficha
+
+- **Autor:** Nome
+- **Ano:** 2024
+- **Tipo:** Livro | Artigo | Paper
+- **DOI/ISBN:** ...
+- **Lido:** 2026-05
+
+## Ideias principais
+
+- Ideia 1 — parágrafo curto
+- Ideia 2 — ligação a [[outra-nota]] do jardim
+
+## Citações
+
+> "Frase memorável" (p. 42)
+
+## Ligações
+
+- [[nota-relacionada-1]]
+```
+
+A nota começa como seedling. Conforme acumula ligações e ideias desenvolvidas, promove-se a budding e depois evergreen. As notas-conceptuais que a referenciam usam `[[nome-da-fonte|título abreviado]]` e listam-na na secção **Referências**.
+
 ## Estrutura do projecto
 
 ```
