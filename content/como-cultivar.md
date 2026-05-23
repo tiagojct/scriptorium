@@ -33,5 +33,5 @@ Diretrizes pessoais para manter este jardim saudavel.
 
 ## Ligacoes uteis
 
-- Voltar ao [[index|Jardim Digital]]
+- Voltar ao [[index|Scriptorium]]
 - Ver o [[indice-tematico|Indice Tematico]]

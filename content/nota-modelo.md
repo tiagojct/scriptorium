@@ -31,7 +31,7 @@ As subseccoes ajudam a organizar quando a nota cresce.
 
 ## Ligacoes
 
-- [[index|Jardim Digital]] — a pagina inicial
+- [[index|Scriptorium]] — a pagina inicial
 - [[indice-tematico|Indice Tematico]] — agrupamento por temas
 - [[como-cultivar|Como cultivar]] — as regras do jardim
 

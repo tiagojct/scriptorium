@@ -1,5 +1,5 @@
 ---
-title: "Jardim Digital"
+title: "Scriptorium"
 date: 2026-05-23
 tags:
   - meta
@@ -9,7 +9,7 @@ aliases:
   - digital-garden
 ---
 
-# Jardim Digital
+# Scriptorium
 
 Notas publicas sobre saude digital, inteligencia artificial, academia e outros interesses. Este espaco e nao-linear: as notas ligam-se entre si em vez de seguirem uma ordem cronologica.
 
