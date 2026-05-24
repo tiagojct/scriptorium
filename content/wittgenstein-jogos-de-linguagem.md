@@ -1,0 +1,34 @@
+---
+title: "Wittgenstein — Jogos de linguagem e formas de vida"
+date: 2026-05-24
+tags:
+  - filosofia
+  - linguagem
+  - wittgenstein
+  - ia
+draft: true
+maturity: seedling
+---
+
+# Wittgenstein — Jogos de linguagem e formas de vida
+
+A segunda fase do pensamento de Wittgenstein, exposta nas *Investigações Filosóficas* (publicadas postumamente em 1953). Esta é a fase mais frutífera para uma crítica da IA.
+
+## Ideia central
+
+Wittgenstein revê o seu pensamento anterior. O significado de uma palavra **não é fixo**; reside no seu **uso** dentro de um contexto social e prático. A linguagem é uma multiplicidade de "jogos de linguagem" (*Sprachspiele*), cada um entrelaçado com uma "forma de vida" (*Lebensform*) — práticas sociais, culturais e corporais partilhadas.
+
+## Exemplos de jogos de linguagem
+
+Dar ordens, descrever um objecto, contar uma anedota, pedir desculpa, rezar, fazer uma promessa. Cada um tem regras próprias e só faz sentido dentro da forma de vida que o sustenta.
+
+## Implicação para IA
+
+Os Modelos de Linguagem de Grande Escala (LLMs) são treinados para reconhecer e replicar padrões estatísticos de uso da linguagem. No entanto, de uma perspectiva wittgensteiniana, **a IA não participa genuinamente do "jogo de linguagem"** porque lhe falta a "forma de vida" — a experiência humana encarnada, as intenções e o contexto cultural que dão sentido real às palavras.
+
+A IA manipula símbolos; não habita o mundo que dá sentido a esses símbolos.
+
+## Ligações
+
+- [[wittgenstein-tractatus|Wittgenstein — Tractatus]]
+- [[wittgenstein-postman-critica-ia|Crítica da IA — hub]]

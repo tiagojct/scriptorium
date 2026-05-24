@@ -1,0 +1,38 @@
+---
+title: "Postman — Tecnopólio"
+date: 2026-05-24
+tags:
+  - filosofia
+  - tecnologia
+  - postman
+  - ia
+draft: true
+maturity: seedling
+---
+
+# Postman — Tecnopólio
+
+Em *Tecnopólio* (*Technopoly*, 1992), Postman descreve uma sociedade onde a tecnologia deixa de ser uma ferramenta e se torna o próprio paradigma cultural, ditando valores, prioridades e a definição do que é conhecimento.
+
+## Três conceitos-chave
+
+### Idiocracia
+
+O triunfo da conveniência sobre o pensamento crítico. Delegamos processos de decisão a sistemas automáticos e atrofiamos a nossa autonomia intelectual. É o "Efeito Google" elevado à máxima potência.
+
+### Desumanização
+
+A substituição progressiva de relações humanas autênticas por interacções mediadas por máquinas, levando à erosão da empatia e dos laços sociais.
+
+### Soberania do especialista técnico
+
+O saber fragmenta-se e só os especialistas que dominam a linguagem técnica têm autoridade, minando a moralidade pública e o senso comum.
+
+## Para a IA
+
+A IA generativa é a face contemporânea do tecnopólio: promete conveniência e produtividade, mas o custo pode ser a atrofia das capacidades que nos definem como seres que pensam, deliberam e se responsabilizam.
+
+## Ligações
+
+- [[postman-midia-como-epistemologia|Postman — Mídia como epistemologia]]
+- [[wittgenstein-postman-critica-ia|Crítica da IA — hub]]

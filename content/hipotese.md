@@ -1,0 +1,29 @@
+---
+title: "Hipótese"
+date: 2026-05-24
+tags:
+  - epistemologia
+  - filosofia-da-ciencia
+draft: true
+maturity: seedling
+---
+
+# Hipótese
+
+Termo com dois significados distintos consoante o contexto.
+
+## Contexto científico
+
+Explicação provisória sujeita a teste empírico. Uma hipótese científica tem de ser **falseável** — deve ser possível conceber uma observação que a contradiga. "Todos os cisnes são brancos" é uma hipótese porque a observação de um cisne preto a falsearia.
+
+## Contexto matemático
+
+Premissa assumida no âmbito de um argumento específico: "seja *n* um número primo, então…". Não se pretende que a hipótese seja verdadeira em absoluto, apenas que seja assumida para efeitos do raciocínio. Neste sentido, aproxima-se do [[axioma]], mas com um alcance local e provisório.
+
+## Distinção crucial
+
+Uma [[conjectura]] aspira a ser verdadeira; uma hipótese científica aspira a ser testada. A conjectura quer uma prova; a hipótese quer um teste.
+
+## Ligações
+
+- [[proposicoes-epistemologia|Proposições — hub]]
