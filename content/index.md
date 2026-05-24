@@ -11,7 +11,8 @@ aliases:
 
 # Scriptorium
 
-Notas públicas sobre saúde digital, inteligência artificial, academia e outros interesses. Este espaço é não-linear: as notas ligam-se entre si em vez de seguirem uma ordem cronológica.
+Notas públicas sobre coisas que me despertam o interesse. 
+Este espaço é não-linear: as notas ligam-se entre si em vez de seguirem uma ordem cronológica.
 
 ## Navegação
 
@@ -24,6 +25,6 @@ Inspirado pelo movimento [Digital Garden](https://maggieappleton.com/garden-hist
 ## Contacto
 
 - **Email:** [tiagojacinto@med.up.pt](mailto:tiagojacinto@med.up.pt)
-- **Site académico:** [tiagojct.eu](https://tiagojct.eu)
+- **Site:** [tiagojct.eu](https://tiagojct.eu)
 - **GitHub:** [@tiagojct](https://github.com/tiagojct)
 
