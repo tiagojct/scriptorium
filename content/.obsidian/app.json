@@ -1,7 +1,7 @@
 {
   "newFileLocation": "folder",
-  "newFileFolderPath": "content",
-  "attachmentFolderPath": "content/assets",
+  "newFileFolderPath": "",
+  "attachmentFolderPath": "assets",
   "showUnsupportedFiles": true,
   "showLineNumber": true,
   "defaultViewMode": "source",

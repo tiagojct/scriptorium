@@ -1,11 +1,11 @@
 # Obsidian
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/plugins/
-.obsidian/themes/
-.obsidian/hotkeys.json
-.obsidian/core-plugins.json
-.obsidian/community-plugins.json
+content/.obsidian/workspace.json
+content/.obsidian/workspace-mobile.json
+content/.obsidian/plugins/
+content/.obsidian/themes/
+content/.obsidian/hotkeys.json
+content/.obsidian/core-plugins.json
+content/.obsidian/community-plugins.json
 
 # Quartz
 public/
