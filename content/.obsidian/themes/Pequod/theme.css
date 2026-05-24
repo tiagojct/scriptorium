@@ -1,0 +1,752 @@
+/* ---------------------------------------------------------------------------
+ * Pequod — an Obsidian theme by Tiago Jacinto
+ * 
+ * A theme should feel like a room you want to spend time in.
+ * Pequod is the captain's quarters — warm lamplight on aged paper,
+ * the deep blue of the ocean outside the porthole, the worn wood
+ * of the desk. It's a theme for deep work and deep reading.
+ *
+ * Named after the whaling ship in Melville's Moby-Dick.
+ * --------------------------------------------------------------------------- */
+
+/* ===== CSS Variables ===== */
+.theme-dark,
+.theme-light {
+  /* -- Accent (interactive elements, links, buttons) ---------------- */
+  --color-accent: #BD8C68;
+  --color-accent-hover: #A16E50;
+  --color-accent-text: #F7F3EE;
+
+  /* -- Fonts -------------------------------------------------------- */
+  --font-interface: "Atkinson Hyperlegible", system-ui, -apple-system, sans-serif;
+  --font-text: "Atkinson Hyperlegible", system-ui, -apple-system, sans-serif;
+  --font-monospace: "JetBrains Mono", "SF Mono", "Fira Code", monospace;
+
+  /* -- Font sizes (Minimal-inspired scale) -------------------------- */
+  --font-smallest: 0.75em;
+  --font-smaller: 0.8125em;
+  --font-small: 0.875em;
+  --font-adaptive-small: 0.9em;
+  --font-adaptive-normal: 1em;
+  --font-adaptive-large: 1.1em;
+  --font-ui-smaller: 12px;
+  --font-ui-small: 13px;
+  --font-ui-medium: 14px;
+  --font-ui-large: 15px;
+
+  /* -- Spacing ------------------------------------------------------ */
+  --size-2-1: 2px;
+  --size-2-2: 4px;
+  --size-2-3: 6px;
+  --size-4-1: 4px;
+  --size-4-2: 8px;
+  --size-4-3: 12px;
+  --size-4-4: 16px;
+  --size-4-5: 20px;
+  --size-4-6: 24px;
+  --size-4-8: 32px;
+  --size-4-9: 36px;
+  --size-4-12: 48px;
+  --size-4-16: 64px;
+
+  /* -- Borders & Radius --------------------------------------------- */
+  --border-radius-s: 4px;
+  --border-radius-m: 6px;
+  --border-radius-l: 8px;
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --radius-xl: 16px;
+  --input-radius: 6px;
+}
+
+/* ===== Dark Mode — Below the Waterline ===== */
+.theme-dark {
+  /* Background hierarchy — from deepest to surface */
+  --color-base-00: #0B1720;    /* Primary bg: the ocean at night */
+  --color-base-05: #0E1D2A;
+  --color-base-10: #112433;    /* Sidebar bg */
+  --color-base-15: #152B3D;
+  --color-base-20: #183247;    /* Dividers */
+  --color-base-25: #1B3A51;    /* Hover states, table stripes */
+  --color-base-30: #1E425B;    /* Active states, pressed */
+  --color-base-35: #214A65;
+  --color-base-40: #24526F;
+  --color-base-50: #2A6285;    /* Muted UI elements */
+  --color-base-60: #87A8BB;
+  --color-base-70: #AFC1CE;    /* Secondary text */
+  --color-base-80: #C7D5DE;
+  --color-base-90: #DEE6EC;
+  --color-base-100: #EAE1D7;   /* Primary text — warm ivory */
+
+  /* Text */
+  --text-normal: #EAE1D7;
+  --text-muted: #AFC1CE;
+  --text-faint: #2A6285;
+  --text-on-accent: #F7F3EE;
+  --text-on-accent-inverted: #0B1720;
+  --text-error: #E06C75;
+  --text-success: #98C379;
+  --text-warning: #E5C07B;
+  --text-accent: #CFAD8E;
+  --text-accent-hover: #DBC9B6;
+
+  /* Interactive */
+  --interactive-normal: #183247;
+  --interactive-hover: #1B3A51;
+  --interactive-accent: #BD8C68;
+  --interactive-accent-hover: #A16E50;
+  --interactive-accent-hsl: 26, 42%, 57%;
+
+  /* Background */
+  --background-primary: #0B1720;
+  --background-primary-alt: #0E1D2A;
+  --background-secondary: #112433;
+  --background-secondary-alt: #152B3D;
+  --background-modifier-border: #183247;
+  --background-modifier-border-hover: #1E425B;
+  --background-modifier-border-focus: #BD8C68;
+  --background-modifier-form-field: #152B3D;
+  --background-modifier-form-field-highlighted: #1B3A51;
+  --background-modifier-success: rgba(152, 195, 121, 0.12);
+  --background-modifier-error: rgba(224, 108, 117, 0.12);
+  --background-modifier-error-hover: rgba(224, 108, 117, 0.2);
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+
+  /* Shadows (subtle — the ocean has no hard shadows) */
+  --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-l: 0 4px 16px rgba(0, 0, 0, 0.4);
+
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #1E425B;
+  --scrollbar-thumb-hover-bg: #2A6285;
+  --scrollbar-active-thumb-bg: #BD8C68;
+
+  /* Selection */
+  --text-selection: rgba(189, 140, 104, 0.25);
+
+  /* Title bar */
+  --titlebar-background: #0B1720;
+  --titlebar-background-focused: #0E1D2A;
+  --titlebar-text-color: #AFC1CE;
+  --titlebar-text-color-focused: #EAE1D7;
+
+  /* Dividers */
+  --divider-color: #183247;
+  --divider-color-hover: #1E425B;
+
+  /* Icons */
+  --icon-color: #AFC1CE;
+  --icon-color-hover: #EAE1D7;
+  --icon-color-active: #BD8C68;
+  --icon-color-focused: #BD8C68;
+
+  /* Nav */
+  --nav-item-color: #AFC1CE;
+  --nav-item-color-hover: #EAE1D7;
+  --nav-item-color-active: #EAE1D7;
+  --nav-item-background-hover: rgba(189, 140, 104, 0.08);
+  --nav-item-background-active: rgba(189, 140, 104, 0.15);
+  --nav-item-weight-hover: 600;
+  --nav-item-weight-active: 600;
+  --nav-collapse-icon-color: #AFC1CE;
+  --nav-heading-color: #87A8BB;
+  --nav-indentation-guide-color: #183247;
+
+  /* File tree */
+  --nav-item-size: var(--font-ui-small);
+  --nav-item-children-padding-left: 16px;
+  --nav-item-children-margin-left: 8px;
+
+  /* Ribbon */
+  --ribbon-background: #0E1D2A;
+  --ribbon-background-collapsed: #0B1720;
+
+  /* Tabs */
+  --tab-background-active: #112433;
+  --tab-text-color: #AFC1CE;
+  --tab-text-color-active: #EAE1D7;
+  --tab-text-color-focused: #EAE1D7;
+  --tab-text-color-focused-active: #EAE1D7;
+  --tab-outline-color: #183247;
+  --tab-divider-color: #183247;
+  --tab-curve: 6px;
+
+  /* Status bar */
+  --status-bar-background: #0E1D2A;
+  --status-bar-text-color: #87A8BB;
+
+  /* Prompts */
+  --prompt-border-color: #1E425B;
+
+  /* Vault profile */
+  --vault-profile-color: #BD8C68;
+
+  /* Table */
+  --table-border-color: #183247;
+  --table-header-background: rgba(189, 140, 104, 0.1);
+  --table-header-background-hover: rgba(189, 140, 104, 0.15);
+  --table-row-background-hover: rgba(189, 140, 104, 0.06);
+  --table-row-alt-background: rgba(255, 255, 255, 0.02);
+
+  /* Code blocks */
+  --code-background: #112433;
+  --code-normal: #DBC9B6;
+  --code-comment: #2A6285;
+
+  /* Tags */
+  --tag-color: #CFAD8E;
+  --tag-color-hover: #DBC9B6;
+  --tag-background: rgba(189, 140, 104, 0.15);
+  --tag-background-hover: rgba(189, 140, 104, 0.25);
+  --tag-border-color: transparent;
+
+  /* Blockquote */
+  --blockquote-background-color: rgba(189, 140, 104, 0.05);
+  --blockquote-border-color: #BD8C68;
+  --blockquote-border-thickness: 2px;
+
+  /* Checkboxes */
+  --checkbox-color: #24526F;
+  --checkbox-color-hover: #BD8C68;
+  --checkbox-border-color: #24526F;
+  --checkbox-border-color-hover: #BD8C68;
+  --checkbox-marker-color: #0B1720;
+  --checklist-done-color: #2A6285;
+  --checklist-done-decoration: line-through;
+
+  /* Links */
+  --link-color: #BD8C68;
+  --link-color-hover: #CFAD8E;
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-color: #BD8C68;
+  --link-external-color-hover: #CFAD8E;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+  --link-unresolved-color: #E06C75;
+  --link-unresolved-decoration-color: #E06C75;
+
+  /* Metadata */
+  --metadata-label-text-color: #87A8BB;
+  --metadata-input-background-active: rgba(189, 140, 104, 0.1);
+
+  /* Canvas */
+  --canvas-color: 26, 66%, 37%;
+
+  /* Graph */
+  --graph-line: #1E425B;
+  --graph-node: #BD8C68;
+  --graph-node-unresolved: #2A6285;
+  --graph-node-tag: #CFAD8E;
+  --graph-node-attachment: #87A8BB;
+
+  /* Calendar */
+  --calendar-dot-color: #BD8C68;
+
+  /* Sliding panes */
+  --sliding-panes-border-color: #183247;
+
+  /* Modal */
+  --modal-border-color: #1E425B;
+  --modal-background: #112433;
+}
+
+/* ===== Light Mode — Above the Waterline ===== */
+.theme-light {
+  /* Background hierarchy — from deep to surface */
+  --color-base-00: #F7F3EE;    /* Primary bg: aged parchment */
+  --color-base-05: #F2EDE6;
+  --color-base-10: #EDE7DE;    /* Sidebar bg */
+  --color-base-15: #E8E0D6;
+  --color-base-20: #E3DACD;    /* Dividers */
+  --color-base-25: #DDD3C4;    /* Hover states */
+  --color-base-30: #DBC9B6;    /* Active states */
+  --color-base-35: #D0BFA8;
+  --color-base-40: #C5B29A;
+  --color-base-50: #AFA08A;    /* Muted UI */
+  --color-base-60: #8A7E6B;
+  --color-base-70: #665D50;    /* Secondary text */
+  --color-base-80: #4A433A;
+  --color-base-90: #2E2A24;
+  --color-base-100: #0D2F42;   /* Primary text — deep ocean */
+
+  /* Text */
+  --text-normal: #0D2F42;
+  --text-muted: #665D50;
+  --text-faint: #AFA08A;
+  --text-on-accent: #F7F3EE;
+  --text-on-accent-inverted: #0D2F42;
+  --text-error: #C5443F;
+  --text-success: #5C8B46;
+  --text-warning: #B88A44;
+  --text-accent: #A16E50;
+  --text-accent-hover: #8A5C40;
+
+  /* Interactive */
+  --interactive-normal: #EDE7DE;
+  --interactive-hover: #E3DACD;
+  --interactive-accent: #BD8C68;
+  --interactive-accent-hover: #A16E50;
+  --interactive-accent-hsl: 26, 42%, 57%;
+
+  /* Background */
+  --background-primary: #F7F3EE;
+  --background-primary-alt: #F2EDE6;
+  --background-secondary: #EDE7DE;
+  --background-secondary-alt: #E8E0D6;
+  --background-modifier-border: #DBC9B6;
+  --background-modifier-border-hover: #C5B29A;
+  --background-modifier-border-focus: #BD8C68;
+  --background-modifier-form-field: #F2EDE6;
+  --background-modifier-form-field-highlighted: #EDE7DE;
+  --background-modifier-success: rgba(92, 139, 70, 0.12);
+  --background-modifier-error: rgba(197, 68, 63, 0.12);
+  --background-modifier-error-hover: rgba(197, 68, 63, 0.2);
+  --background-modifier-cover: rgba(13, 47, 66, 0.4);
+
+  /* Shadows */
+  --shadow-s: 0 1px 2px rgba(13, 47, 66, 0.06);
+  --shadow-l: 0 4px 16px rgba(13, 47, 66, 0.1);
+
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #DBC9B6;
+  --scrollbar-thumb-hover-bg: #C5B29A;
+  --scrollbar-active-thumb-bg: #BD8C68;
+
+  /* Selection */
+  --text-selection: rgba(189, 140, 104, 0.2);
+
+  /* Title bar */
+  --titlebar-background: #F7F3EE;
+  --titlebar-background-focused: #F2EDE6;
+  --titlebar-text-color: #665D50;
+  --titlebar-text-color-focused: #0D2F42;
+
+  /* Dividers */
+  --divider-color: #DBC9B6;
+  --divider-color-hover: #C5B29A;
+
+  /* Icons */
+  --icon-color: #8A7E6B;
+  --icon-color-hover: #0D2F42;
+  --icon-color-active: #A16E50;
+  --icon-color-focused: #A16E50;
+
+  /* Nav */
+  --nav-item-color: #4A433A;
+  --nav-item-color-hover: #0D2F42;
+  --nav-item-color-active: #0D2F42;
+  --nav-item-background-hover: rgba(189, 140, 104, 0.08);
+  --nav-item-background-active: rgba(189, 140, 104, 0.15);
+  --nav-item-weight-hover: 600;
+  --nav-item-weight-active: 600;
+  --nav-collapse-icon-color: #8A7E6B;
+  --nav-heading-color: #665D50;
+  --nav-indentation-guide-color: #E3DACD;
+
+  /* File tree */
+  --nav-item-size: var(--font-ui-small);
+  --nav-item-children-padding-left: 16px;
+  --nav-item-children-margin-left: 8px;
+
+  /* Ribbon */
+  --ribbon-background: #F2EDE6;
+  --ribbon-background-collapsed: #F7F3EE;
+
+  /* Tabs */
+  --tab-background-active: #F7F3EE;
+  --tab-text-color: #8A7E6B;
+  --tab-text-color-active: #0D2F42;
+  --tab-text-color-focused: #0D2F42;
+  --tab-text-color-focused-active: #0D2F42;
+  --tab-outline-color: #DBC9B6;
+  --tab-divider-color: #DBC9B6;
+  --tab-curve: 6px;
+
+  /* Status bar */
+  --status-bar-background: #F2EDE6;
+  --status-bar-text-color: #8A7E6B;
+
+  /* Prompts */
+  --prompt-border-color: #DBC9B6;
+
+  /* Vault profile */
+  --vault-profile-color: #A16E50;
+
+  /* Table */
+  --table-border-color: #DBC9B6;
+  --table-header-background: rgba(189, 140, 104, 0.1);
+  --table-header-background-hover: rgba(189, 140, 104, 0.15);
+  --table-row-background-hover: rgba(189, 140, 104, 0.06);
+  --table-row-alt-background: rgba(189, 140, 104, 0.03);
+
+  /* Code blocks */
+  --code-background: #EDE7DE;
+  --code-normal: #0D2F42;
+  --code-comment: #AFA08A;
+
+  /* Tags */
+  --tag-color: #A16E50;
+  --tag-color-hover: #8A5C40;
+  --tag-background: rgba(189, 140, 104, 0.15);
+  --tag-background-hover: rgba(189, 140, 104, 0.25);
+  --tag-border-color: transparent;
+
+  /* Blockquote */
+  --blockquote-background-color: rgba(189, 140, 104, 0.05);
+  --blockquote-border-color: #BD8C68;
+  --blockquote-border-thickness: 2px;
+
+  /* Checkboxes */
+  --checkbox-color: #DBC9B6;
+  --checkbox-color-hover: #BD8C68;
+  --checkbox-border-color: #DBC9B6;
+  --checkbox-border-color-hover: #BD8C68;
+  --checkbox-marker-color: #F7F3EE;
+  --checklist-done-color: #AFA08A;
+  --checklist-done-decoration: line-through;
+
+  /* Links */
+  --link-color: #A16E50;
+  --link-color-hover: #8A5C40;
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-color: #A16E50;
+  --link-external-color-hover: #8A5C40;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+  --link-unresolved-color: #C5443F;
+  --link-unresolved-decoration-color: #C5443F;
+
+  /* Metadata */
+  --metadata-label-text-color: #665D50;
+  --metadata-input-background-active: rgba(189, 140, 104, 0.1);
+
+  /* Canvas */
+  --canvas-color: 26, 42%, 57%;
+
+  /* Graph */
+  --graph-line: #DBC9B6;
+  --graph-node: #A16E50;
+  --graph-node-unresolved: #AFA08A;
+  --graph-node-tag: #BD8C68;
+  --graph-node-attachment: #665D50;
+
+  /* Calendar */
+  --calendar-dot-color: #A16E50;
+
+  /* Sliding panes */
+  --sliding-panes-border-color: #DBC9B6;
+
+  /* Modal */
+  --modal-border-color: #DBC9B6;
+  --modal-background: #F7F3EE;
+}
+
+/* ===== Typography Refinements ===== */
+
+body {
+  --font-text-size: 16px;
+  --line-height-normal: 1.65;
+  --line-height-tight: 1.35;
+  --font-weight: 420;
+  --font-bold: 620;
+  --text-on-accent-weight: 500;
+  --inline-title-weight: 620;
+  --h1-weight: 650;
+  --h2-weight: 620;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+  --file-line-width: 700px;
+
+  /* Softer rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  /* Transition */
+  --anim-duration-none: 0;
+  --anim-duration-superfast: 70ms;
+  --anim-duration-fast: 140ms;
+  --anim-duration-moderate: 300ms;
+  --anim-duration-slow: 560ms;
+}
+
+/* Headings — Source Serif 4 shines here */
+.markdown-rendered h1,
+.markdown-source-view.mod-cm6 .cm-header-1,
+.cm-header-1 {
+  font-size: 2em;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--text-normal);
+}
+
+.markdown-rendered h2,
+.markdown-source-view.mod-cm6 .cm-header-2,
+.cm-header-2 {
+  font-size: 1.5em;
+  font-weight: 620;
+  letter-spacing: -0.01em;
+}
+
+.markdown-rendered h3,
+.markdown-source-view.mod-cm6 .cm-header-3 {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.markdown-rendered h4,
+.markdown-source-view.mod-cm6 .cm-header-4 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* ===== UI Subtlety ===== */
+
+/* Softer sidebar */
+.nav-folder-title,
+.nav-file-title {
+  border-radius: var(--radius-s);
+  padding: 2px 8px;
+  transition: background-color var(--anim-duration-fast) ease;
+}
+
+/* Clean inline title */
+.inline-title {
+  font-family: var(--font-text);
+  font-weight: var(--inline-title-weight);
+  letter-spacing: -0.01em;
+  color: var(--text-normal);
+}
+
+/* Subtle status bar */
+.status-bar {
+  border-top: 1px solid var(--divider-color);
+}
+
+/* Cleaner prompts */
+.prompt {
+  border: 1px solid var(--prompt-border-color);
+  box-shadow: var(--shadow-l);
+}
+
+/* Softer modals */
+.modal {
+  border: 1px solid var(--modal-border-color);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-l);
+}
+
+/* ===== Editor Refinements ===== */
+
+/* Code blocks with warm background */
+.markdown-rendered code,
+.cm-inline-code {
+  background-color: var(--code-background);
+  color: var(--code-normal);
+  border-radius: var(--radius-s);
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+.markdown-rendered pre {
+  background-color: var(--code-background);
+  border-radius: var(--radius-m);
+  border: 1px solid var(--divider-color);
+  padding: var(--size-4-4);
+}
+
+.markdown-rendered pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Blockquote — the amber left border is the Pequod signature */
+.markdown-rendered blockquote {
+  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  background-color: var(--blockquote-background-color);
+  padding: var(--size-4-2) var(--size-4-4);
+  margin: var(--size-4-4) 0;
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-quote {
+  background-color: var(--blockquote-background-color);
+}
+
+/* Tags — rounded and warm */
+.tag {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border: 1px solid var(--tag-border-color);
+  border-radius: var(--radius-l);
+  padding: 1px 8px;
+  font-size: var(--font-smallest);
+  font-weight: 500;
+}
+
+.tag:hover {
+  background-color: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+}
+
+/* Links — underlined only on hover, cleaner */
+.cm-underline,
+.cm-link,
+.markdown-rendered a.internal-link,
+.markdown-rendered a.external-link {
+  text-decoration: none;
+  transition: color var(--anim-duration-fast) ease;
+}
+
+.cm-underline:hover,
+.markdown-rendered a.internal-link:hover,
+.markdown-rendered a.external-link:hover {
+  text-decoration: underline;
+}
+
+/* Table styling */
+.markdown-rendered table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--table-border-color);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+.markdown-rendered th {
+  background-color: var(--table-header-background);
+  font-weight: 600;
+  border-bottom: 2px solid var(--table-border-color);
+}
+
+.markdown-rendered td,
+.markdown-rendered th {
+  border-right: 1px solid var(--table-border-color);
+  border-bottom: 1px solid var(--table-border-color);
+}
+
+.markdown-rendered td:last-child,
+.markdown-rendered th:last-child {
+  border-right: none;
+}
+
+.markdown-rendered tr:last-child td {
+  border-bottom: none;
+}
+
+/* Horizontal rule — subtle */
+.markdown-rendered hr,
+.cm-hr {
+  border: none;
+  border-top: 1px solid var(--divider-color);
+  margin: var(--size-4-8) 0;
+}
+
+/* ===== Graph View — Ship's Cartography ===== */
+
+/* Bold tags in graph */
+.graph-view.color-fill-tag {
+  color: var(--graph-node-tag);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-node-attachment);
+}
+
+/* ===== Calendar ===== */
+
+#calendar-container .day:hover,
+#calendar-container .day:active,
+#calendar-container .day.active,
+#calendar-container .day.today {
+  background-color: rgba(189, 140, 104, 0.2);
+}
+
+#calendar-container .day.today {
+  font-weight: 600;
+  color: var(--interactive-accent);
+}
+
+/* ===== Callouts ===== */
+
+.callout {
+  border-radius: var(--radius-m);
+  border: none;
+  border-left: 3px solid;
+}
+
+.callout-title {
+  font-weight: 600;
+}
+
+/* ===== Mobile Refinements ===== */
+.is-mobile .nav-folder-title,
+.is-mobile .nav-file-title {
+  border-radius: var(--radius-s);
+  padding: 4px 10px;
+}
+
+/* ===== Misc ===== */
+
+/* Active line highlight in editor */
+.cm-active {
+  background-color: rgba(189, 140, 104, 0.06);
+}
+
+/* Search highlight */
+.markdown-rendered mark,
+.cm-highlight,
+.search-result-file-matched-text {
+  background-color: rgba(189, 140, 104, 0.25);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* Image borders */
+.markdown-rendered img {
+  border-radius: var(--radius-m);
+}
+
+/* Frontmatter / YAML */
+.cm-hmd-frontmatter {
+  color: var(--text-faint);
+  font-size: var(--font-smaller);
+}
+
+/* Metadata / properties */
+.metadata-property-key {
+  color: var(--metadata-label-text-color);
+}
+
+/* Embedded notes */
+.markdown-embed {
+  border: 1px solid var(--divider-color);
+  border-radius: var(--radius-m);
+}
+
+.markdown-embed-title {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* ===== Checkboxes ===== */
+.task-list-item-checkbox {
+  border-color: var(--checkbox-border-color);
+}
+
+.task-list-item-checkbox:hover {
+  border-color: var(--checkbox-border-color-hover);
+}
+
+.task-list-item[data-task="x"] {
+  color: var(--checklist-done-color);
+  text-decoration: var(--checklist-done-decoration);
+}
