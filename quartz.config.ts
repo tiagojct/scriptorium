@@ -22,7 +22,7 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: "Atkinson Hyperlegible",
-        body: "Source Serif 4",
+        body: "Atkinson Hyperlegible",
         code: "JetBrains Mono",
       },
       colors: {
