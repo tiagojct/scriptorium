@@ -6,7 +6,7 @@ tags:
   - ia
   - wittgenstein
   - postman
-draft: true
+draft: false
 maturity: seedling
 aliases:
   - critica-da-ia

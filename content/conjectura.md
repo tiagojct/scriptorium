@@ -5,7 +5,7 @@ tags:
   - epistemologia
   - logica
   - matematica
-draft: true
+draft: false
 maturity: seedling
 ---
 

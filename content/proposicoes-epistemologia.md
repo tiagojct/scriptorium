@@ -5,7 +5,7 @@ tags:
   - epistemologia
   - logica
   - filosofia-da-ciencia
-draft: true
+draft: false
 maturity: seedling
 aliases:
   - proposicoes

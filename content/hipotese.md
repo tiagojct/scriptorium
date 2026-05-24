@@ -4,7 +4,7 @@ date: 2026-05-24
 tags:
   - epistemologia
   - filosofia-da-ciencia
-draft: true
+draft: false
 maturity: seedling
 ---
 

@@ -6,7 +6,7 @@ tags:
   - linguagem
   - wittgenstein
   - ia
-draft: true
+draft: false
 maturity: seedling
 ---
 
